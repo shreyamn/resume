@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #f5edf9, #e9d8f1);
+      color: #2b262b;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      border: 10px solidrgb(172, 125, 194);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: relative;
+      margin-bottom: 20px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      width: 100%;
+      box-sizing: border-box;
+      background-color: #fff;
+      border-radius: 15px; 
+      border: 5px solid rgb(172, 125, 194); 
+      overflow: hidden;
+    }
+
+
+    .photo img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      border: 4px solid rgb(172, 125, 194); 
+    }
+
+    .bio {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .card,
+    fieldset {
+      background-color: #fff; 
+      padding: 20px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 15px; 
+      margin-bottom: 10px;
+      max-width: 850px;
+      width: 100%;
+      box-sizing: border-box;
+      border: 5px solid rgb(172, 125, 194);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th,
+    td {
+      border: 1px solid #2b262b;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f5f2f5;
+    }
+
+    a {
+      text-decoration: none;
+      color: #2b262b;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #945c8e;
+    }
+    .resume-section:hover {
+      transform: scale(1.05);
+      transition: transform 0.2s ease-in-out;
+      z-index: 1;
+    }
+
+    footer {
+      background-color: #fff;
+      color: #2b262b;
+      text-align: center;
+      padding: 10px;
+      width: 100%;
+      position: relative;
+      bottom: 0;
+      border-top: 10px solid rgb(172, 125, 194); 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .footer-logo {
+      margin-right: 10px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    @media (min-width: 768px) {
+      .profile {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .bio {
+        margin-top: 0;
+        margin-left: 20px;
+        text-align: left;
+      }
+
+      .photo img {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  </style>
+  <title>Shreya MN - Student at RV University</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="profile">
+      <div class="photo">
+        <img src="images/profile.jpg" alt="Profile Picture">
+      </div>
+      <div class="bio">
+        <h1 class="name">Shreya MN</h1>
+        <p class="student">Student</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="card" id="personalInfo">
+    <h2>Personal Information</h2>
+    <p>Student at RV University.</p>
+    <p>I thrive on coding challenges and collaborative projects, fostering innovation in technology-driven environments.
+      Immersed in the art of web design, I find joy in crafting visually appealing interfaces, blending creativity and
+      functionality to deliver seamless user experiences that captivate and inspire.</p>
+    <table>
+      <tr>
+        <th>Education</th>
+        <td>RV University</td>
+      </tr>
+      <tr>
+        <th>Degree</th>
+        <td>B.tech(H)</td>
+      </tr>
+      <tr>
+        <th>Course</th>
+        <td>Computer Science</td>
+      </tr>
+      <tr>
+        <th>Semester</th>
+        <td>First semester</td>
+      </tr>
+      <tr>
+        <th>Year of passing</th>
+        <td>2027</td>
+      </tr>
+    </table>
+  </div>
+
+  <fieldset id="achievements" class="resume-section">
+    <h2>Achievements</h2>
+    <ul>
+      <li>IWD Mini Project: <a href="https://github.com/vvt-03/svera" target="_blank">Project Link</a></li>
+      <li>Python Project - Unmasking Deception: <a
+          href="https://www.linkedin.com/feed/update/urn:li:activity:7144960976583294977?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7144960976583294977%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BMMn0iNfORM6owwN%2Btdtvpg%3D%3D"
+          target="_blank">Project Link</a></li>
+      <li>Structured Innovation Game Project</li>
+    </ul>
+  </fieldset>
+
+  <fieldset id="skills" class="resume-section">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python Programming</li>
+      <li>Web Design</li>
+      <li>Content Writing</li>
+      <li>C</li>
+      <li>C++</li>
+      <li>JavaScript</li>
+    </ul>
+  </fieldset>
+
+  <fieldset id="hobbies" class="resume-section">
+    <h2>Hobbies</h2>
+    <ul>
+      <li>Crochet - Passionate about crochet, I craft diverse clothing pieces, expressing creativity through intricate
+        patterns and vibrant colors.</li>
+      <li>Cooking - I delight in preparing flavorful vegan dishes, experimenting with plant-based ingredients to create
+        delicious, wholesome meals.</li>
+    </ul>
+  </fieldset>
+
+  <fieldset id="contactInfo" class="resume-section">
+    <h2>Contact Info</h2>
+    <p>Email: shreyamn2005@gmail.com</p>
+    <p>
+      <a id="linkedinLink" href="https://www.linkedin.com/in/shreya-m-n-b4299a297/" target="_blank">
+        <img class="footer-logo" id="linkedinLogo" src="images/linkedin.png" alt="LinkedIn Logo">
+        LinkedIn Profile
+      </a>
+    </p>
+    <p>
+      <a id="instagramLink" href="https://www.instagram.com/shreya_m_nagaraj/" target="_blank">
+        <img class="footer-logo" id="instagramLogo" src="images\instagram.png" alt="Instagram Logo">
+        Instagram Profile
+      </a>
+    </p>
+  </fieldset>
+  
+  <footer>
+    &copy; 2024 Shreya MN | Student
+    <a id="linkedinLink2" href="https://www.linkedin.com/in/shreya-m-n-b4299a297/" target="_blank">
+      <img class="footer-logo" id="linkedinLogo2" src="images/linkedin.png" alt="LinkedIn Logo">
+    </a>
+    <a id="instagramLink2" href="https://www.instagram.com/shreya_m_nagaraj/" target="_blank">
+      <img class="footer-logo" id="instagramLogo2" src="images/insta2.png" alt="Instagram Logo">
+    </a>
+  </footer>
+  
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const sections = document.querySelectorAll('.resume-section');
+
+      function showSection(sectionId) {
+        sections.forEach(section => {
+          section.style.display = 'none';
+        });
+
+        const selectedSection = document.getElementById(sectionId);
+        if (selectedSection) {
+          selectedSection.style.display = 'flex';
+        }
+      }
+
+      const linkedinLogo = document.getElementById('linkedinLogo2');
+      linkedinLogo.src = "images/linkedin2.png"; // 
+
+      const instagramLogo = document.getElementById('instagramLogo2');
+      instagramLogo.src = "images/insta2.png"; 
+    });
+  </script>
+
+</body>
+
+</html>
