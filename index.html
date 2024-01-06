@@ -243,6 +243,17 @@
       </a>
     </p>
   </fieldset>
+  <fieldset id="reviewForm" class="resume-section">
+    <h2>Review</h2>
+    <form id="reviewForm" action="#" method="post">
+      <label for="reviewText">Your Review:</label>
+      <textarea id="reviewText" name="reviewText" rows="4" cols="50"></textarea>
+      <input type="submit" value="Submit Review">
+    </form>
+    <div id="submissionMessage" style="display:none;">
+      <p>Thanks for submitting your review!</p>
+    </div>
+  </fieldset>
   
   <footer>
     &copy; 2024 Shreya MN | Student
@@ -254,7 +265,6 @@
     </a>
   </footer>
   
-
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const sections = document.querySelectorAll('.resume-section');
@@ -271,10 +281,18 @@
       }
 
       const linkedinLogo = document.getElementById('linkedinLogo2');
-      linkedinLogo.src = "images/linkedin2.png"; // 
+      linkedinLogo.src = "linkedin2.png";
 
       const instagramLogo = document.getElementById('instagramLogo2');
-      instagramLogo.src = "images/insta2.png"; 
+      instagramLogo.src = "insta2.png";
+
+      const reviewForm = document.getElementById('reviewForm');
+      const submissionMessage = document.getElementById('submissionMessage');
+
+      reviewForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+        submissionMessage.style.display = 'block';
+      });
     });
   </script>
 
